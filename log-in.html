@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .bg-image {
+      /* The image used */
+      background-image: url('file:///C:/Users/pc/Desktop/bg-img.jpg');
+      
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Position text in the center of the page/image */
+    .bg-text {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+<div class="bg-text">
+        <h2>Login Form</h2>
+       <form action="/submit-your-login-form" method="post">
+          <label for="uname"><b>Username</b></label>
+           <input type="text" placeholder="Enter Username" name="uname" required>
+          <br>
+           <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
+         <label for="Email"><b> Email  </b></label>
+          <input type="email" placeholder="Enter your email" name="Email" required>
+         <br>
+          <label for="Date-birth"><b> Your date birth  </b></label>
+         <input type="date" placeholder="Enter your Date-birth" name="Date-birth" required>
+         <br>
+         <b>Sexe</b><input type="radio" name="Sexe" value="M"><b>M</b>
+         <input type="radio" name="Sexe" value="F"><b>F</b>
+         <br>
+         <button type="submit">Login</button>
+          </form>
+          <a href="cal.html"> Calender</a>
+         <a href="app-to0do-list.html"> To Do List</a>
+          </div>
+         
+  </body>
+</html>

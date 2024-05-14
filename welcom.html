@@ -1,0 +1,45 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Welcome Page</title>
+   <style>
+    body, html {
+    height: 100%;
+      margin: 0;
+     display: flex;
+     justify-content: center;
+      align-items: center;
+     background-color: #f7f7f7;
+      font-family: Arial, sans-serif;}
+
+     .bg-image {
+      /* The image used */
+      background-image: url('file:///C:/Users/pc/Desktop/bg-img.jpg');
+      
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      
+      /* Full height */
+      height: 60%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    .text{
+      text-align: end;
+    }
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+<h1 >Welcome to your planner</h1>
+<a  class="text" href="log-in.html"> Log In</a>
+
+</body>
+</html>
